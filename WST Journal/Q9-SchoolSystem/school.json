@@ -1,0 +1,89 @@
+{
+  "schoolId": "INST_TECH_2026",
+  "schoolName": "Apex Institute of Technology",
+  "schoolAddress": "Hitech City, Hyderabad, Telangana",
+  "principalName": "Dr. Sarah D'Souza",
+  "established": 2010,
+  "students": [
+    {
+      "studentId": "STU_9901",
+      "firstName": "Ishaan",
+      "lastName": "Malhotra",
+      "dateOfBirth": "2004-11-12",
+      "gender": "Male",
+      "class": "MCA-Final",
+      "rollNumber": 101,
+      "email": "ishaan.m@apextech.edu",
+      "phone": "9011002233",
+      "address": "Hyderabad"
+    },
+    {
+      "studentId": "STU_9902",
+      "firstName": "Kavya",
+      "lastName": "Iyer",
+      "dateOfBirth": "2005-02-28",
+      "gender": "Female",
+      "class": "MCA-Final",
+      "rollNumber": 102,
+      "email": "kavya.i@apextech.edu",
+      "phone": "9011445566",
+      "address": "Bangalore"
+    }
+  ],
+  "teachers": [
+    {
+      "teacherId": "FAC_001",
+      "firstName": "David",
+      "lastName": "Miller",
+      "subject": "Cloud Computing",
+      "qualification": "Ph.D in CS",
+      "experience": 18,
+      "email": "d.miller@apextech.edu",
+      "phone": "9011889900"
+    },
+    {
+      "teacherId": "FAC_002",
+      "firstName": "Anita",
+      "lastName": "Rao",
+      "subject": "Machine Learning",
+      "qualification": "M.Tech, Ph.D",
+      "experience": 14,
+      "email": "a.rao@apextech.edu",
+      "phone": "9011223344"
+    }
+  ],
+  "exams": [
+    {
+      "examId": "SEM_V_2026",
+      "examName": "Fifth Semester Finals",
+      "examDate": "2026-05-15",
+      "duration": "3 hours",
+      "totalMarks": 100,
+      "class": "MCA"
+    }
+  ],
+  "results": [
+    {
+      "resultId": "RES_XP1",
+      "studentId": "STU_9901",
+      "examId": "SEM_V_2026",
+      "subject": "Cloud Computing",
+      "marksObtained": 95,
+      "totalMarks": 100,
+      "percentage": 95,
+      "grade": "O",
+      "gpa": 10.0
+    },
+    {
+      "resultId": "RES_XP2",
+      "studentId": "STU_9902",
+      "examId": "SEM_V_2026",
+      "subject": "Machine Learning",
+      "marksObtained": 89,
+      "totalMarks": 100,
+      "percentage": 89,
+      "grade": "A+",
+      "gpa": 9.2
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "journal",
+  "version": "1.0.0",
+  "description": "This folder contains complete solutions for all 20 journal assignments from the MCA Sem II course on Web Supporting Technology.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

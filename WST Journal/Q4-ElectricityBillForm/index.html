@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerGrid | Online Bill Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bill-container">
+        <div class="branding">
+            <div class="logo-icon">⚡</div>
+            <h2>PowerGrid Solutions</h2>
+            <p>Secure Online Billing Portal</p>
+        </div>
+
+        <form id="ebillForm">
+            <div class="section-title">Consumer Information</div>
+            <div class="input-row">
+                <div class="input-field">
+                    <label>Consumer Number</label>
+                    <input type="text" id="consumerNo" placeholder="CN-1002345">
+                    <small id="cnError" class="error"></small>
+                </div>
+                <div class="input-field">
+                    <label>Consumer Name</label>
+                    <input type="text" id="consumerName" placeholder="Full Name">
+                    <small id="nameError" class="error"></small>
+                </div>
+            </div>
+
+            <div class="input-field">
+                <label>Service Address</label>
+                <textarea id="address" rows="2"></textarea>
+            </div>
+
+            <div class="section-title">Reading Details</div>
+            <div class="input-row">
+                <div class="input-field">
+                    <label>Previous Reading (kWh)</label>
+                    <input type="number" id="prevReading">
+                </div>
+                <div class="input-field">
+                    <label>Current Reading (kWh)</label>
+                    <input type="number" id="currReading">
+                </div>
+            </div>
+
+            <div class="calculation-box">
+                <div class="calc-line">
+                    <span>Units Consumed:</span>
+                    <strong id="unitsValue">0</strong>
+                </div>
+                <div class="calc-line total">
+                    <span>Estimated Total (₹):</span>
+                    <strong id="totalAmount">0.00</strong>
+                </div>
+            </div>
+
+            <button type="button" class="btn-calc" onclick="calculateBill()">Calculate Bill</button>
+            <button type="submit" class="btn-submit">Proceed to Pay</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

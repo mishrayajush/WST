@@ -1,0 +1,52 @@
+{
+  "postId": "POST_887799",
+  "postDate": "2026-04-21T14:45:00Z",
+  "user": {
+    "userId": "USER_994",
+    "username": "sarah_codes_it",
+    "fullName": "Sarah Jenkins",
+    "profileImage": "https://socialnode.com/p/sjenkins.png",
+    "verified": false
+  },
+  "content": "Just deployed my first mobile-responsive dashboard using React and Tailwind CSS! It’s been a long week of debugging, but seeing it live is so satisfying. Check out the screenshots below! 🚀 #ReactJS #TailwindCSS #Frontend",
+  "media": {
+    "images": ["https://socialnode.com/post/dashboard_light.jpg", "https://socialnode.com/post/dashboard_dark.jpg"],
+    "videos": []
+  },
+  "likes": {
+    "count": 512,
+    "likedBy": [
+      {
+        "userId": "USER_112",
+        "username": "dev_kevin"
+      },
+      {
+        "userId": "USER_405",
+        "username": "marcus_tech"
+      }
+    ]
+  },
+  "comments": [
+    {
+      "commentId": "COMM_A1",
+      "userId": "USER_882",
+      "username": "pixel_perfect",
+      "text": "The dark mode toggle looks incredibly smooth. Well done!",
+      "timestamp": "2026-04-21T15:10:00Z",
+      "likes": 24
+    },
+    {
+      "commentId": "COMM_B2",
+      "userId": "USER_339",
+      "username": "coder_sam",
+      "text": "Are you using any specific library for the charts?",
+      "timestamp": "2026-04-21T15:22:00Z",
+      "likes": 3
+    }
+  ],
+  "commentCount": 18,
+  "shareCount": 112,
+  "viewCount": 4890,
+  "isPublic": true,
+  "visibility": "Public"
+}

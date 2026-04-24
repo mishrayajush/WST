@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen Electronics | Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">NexGen Store</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Latest in Technology</h1>
+        <p>Premium Gadgets at Your Fingertips</p>
+    </header>
+
+    <main class="container">
+        <div class="product-grid" id="productGrid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250x200?text=Smartphone" alt="Smartphone" class="prod-img">
+                <div class="info">
+                    <h3>Pro Max Smartphone</h3>
+                    <p class="price">₹69,999</p>
+                    <a href="javascript:void(0)" class="desc-link" onclick="showDesc('Smartphone', '6.7-inch display, 12GB RAM, 256GB Storage, 5G enabled.')">View Description</a>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250x200?text=Laptop" alt="Laptop" class="prod-img">
+                <div class="info">
+                    <h3>Ultra Slim Laptop</h3>
+                    <p class="price">₹85,500</p>
+                    <a href="javascript:void(0)" class="desc-link" onclick="showDesc('Laptop', 'M3 Chip, 16GB Unified Memory, 512GB SSD, Retina Display.')">View Description</a>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250x200?text=Watch" alt="Smartwatch" class="prod-img">
+                <div class="info">
+                    <h3>Series X Smartwatch</h3>
+                    <p class="price">₹12,400</p>
+                    <a href="javascript:void(0)" class="desc-link" onclick="showDesc('Smartwatch', 'Heart rate monitoring, GPS, Water resistant, 7-day battery.')">View Description</a>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250x200?text=Headphones" alt="Headphones" class="prod-img">
+                <div class="info">
+                    <h3>Noise Cancel Headphones</h3>
+                    <p class="price">₹18,200</p>
+                    <a href="javascript:void(0)" class="desc-link" onclick="showDesc('Headphones', 'Active Noise Cancellation, 40hr Battery, Hi-Res Audio.')">View Description</a>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="descModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalBody"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

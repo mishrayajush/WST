@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCare Hospital | Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="header">
+            <h2>Patient Admission Portal</h2>
+            <p>Please fill all mandatory fields for hospital records</p>
+        </div>
+
+        <form id="admissionForm">
+            <div class="form-grid">
+                <div class="field">
+                    <label>Patient ID (System Gen)</label>
+                    <input type="text" id="patientID" placeholder="HOSP-2026-XXXX">
+                </div>
+                <div class="field">
+                    <label>Full Name *</label>
+                    <input type="text" id="patientName" placeholder="Enter Full Name">
+                </div>
+
+                <div class="field full-width">
+                    <label>Residential Address *</label>
+                    <textarea id="address" rows="2"></textarea>
+                </div>
+
+                <div class="field">
+                    <label>City *</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="field">
+                    <label>Adhar ID *</label>
+                    <input type="text" id="adhar" placeholder="12-digit number">
+                </div>
+
+                <div class="field">
+                    <label>Contact No. *</label>
+                    <input type="tel" id="contact">
+                </div>
+                <div class="field">
+                    <label>Email ID</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="field">
+                    <label>Blood Group</label>
+                    <select id="bloodGroup">
+                        <option value="">Select</option>
+                        <option>A+</option><option>A-</option>
+                        <option>B+</option><option>B-</option>
+                        <option>O+</option><option>O-</option>
+                        <option>AB+</option><option>AB-</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Date of Birth *</label>
+                    <input type="date" id="dob" onchange="calculateAge()">
+                </div>
+
+                <div class="field">
+                    <label>Derived Age</label>
+                    <input type="text" id="age" readonly placeholder="Calculated automatically">
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="reset" class="btn-secondary">Clear Form</button>
+                <button type="submit" class="btn-primary">Confirm Admission</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

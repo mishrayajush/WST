@@ -1,0 +1,110 @@
+{
+  "tournamentId": "EURO_2026_FT",
+  "tournamentName": "European Football Cup 2026",
+  "sport": "Football",
+  "startDate": "2026-06-12",
+  "endDate": "2026-07-12",
+  "location": "Berlin, Germany",
+  "matches": [
+    {
+      "matchId": "M_GRP_001",
+      "matchNumber": 1,
+      "matchDate": "2026-06-12",
+      "matchTime": "21:00:00",
+      "venue": "Olympiastadion",
+      "team1": "Germany",
+      "team2": "Scotland",
+      "matchFormat": "90 Minutes",
+      "result": "Germany won 3-1",
+      "team1Score": "3",
+      "team2Score": "1",
+      "player_of_match": "Jamal Musiala"
+    },
+    {
+      "matchId": "M_GRP_002",
+      "matchNumber": 2,
+      "matchDate": "2026-06-13",
+      "matchTime": "18:00:00",
+      "venue": "Allianz Arena",
+      "team1": "Spain",
+      "team2": "Croatia",
+      "matchFormat": "90 Minutes",
+      "result": "Draw",
+      "team1Score": "2",
+      "team2Score": "2",
+      "player_of_match": "Luka Modric"
+    },
+    {
+      "matchId": "M_GRP_003",
+      "matchNumber": 3,
+      "matchDate": "2026-06-13",
+      "matchTime": "21:00:00",
+      "venue": "Signal Iduna Park",
+      "team1": "Italy",
+      "team2": "Albania",
+      "matchFormat": "90 Minutes",
+      "result": "Italy won 1-0",
+      "team1Score": "1",
+      "team2Score": "0",
+      "player_of_match": "Federico Chiesa"
+    }
+  ],
+  "teams": [
+    {
+      "teamId": "T_GER",
+      "teamName": "Germany",
+      "country": "Germany",
+      "coach": "Julian Nagelsmann",
+      "captain": "Ilkay Gündogan",
+      "matches_played": 1,
+      "wins": 1,
+      "draws": 0,
+      "losses": 0,
+      "points": 3
+    },
+    {
+      "teamId": "T_ESP",
+      "teamName": "Spain",
+      "country": "Spain",
+      "coach": "Luis de la Fuente",
+      "captain": "Alvaro Morata",
+      "matches_played": 1,
+      "wins": 0,
+      "draws": 1,
+      "losses": 0,
+      "points": 1
+    },
+    {
+      "teamId": "T_ITA",
+      "teamName": "Italy",
+      "country": "Italy",
+      "coach": "Luciano Spalletti",
+      "captain": "Gianluigi Donnarumma",
+      "matches_played": 1,
+      "wins": 1,
+      "draws": 0,
+      "losses": 0,
+      "points": 3
+    }
+  ],
+  "stats": [
+    {
+      "statId": "STAT_001",
+      "matchId": "M_GRP_001",
+      "team": "Germany",
+      "possession": "62%",
+      "shotsOnTarget": 8,
+      "corners": 5,
+      "fouls": 10
+    },
+    {
+      "statId": "STAT_002",
+      "matchId": "M_GRP_001",
+      "team": "Scotland",
+      "possession": "38%",
+      "shotsOnTarget": 2,
+      "corners": 1,
+      "fouls": 14
+    }
+  ]
+}

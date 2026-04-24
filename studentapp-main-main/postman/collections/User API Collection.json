@@ -1,0 +1,145 @@
+{
+  "info": {
+    "_postman_id": "fc0258d1-4461-48a7-9b5a-bb0e99af0157",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "User Detail by Id",
+      "id": "8d76cff7-f830-4c92-8286-ac1dcb9cf8f8",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/users/detail/69c6bf18f92603e1ef2566c0",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "detail",
+            "69c6bf18f92603e1ef2566c0"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User Update by Id",
+      "id": "14a56297-2a37-46ee-9b6a-85287df277aa",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"John\",\r\n    \"password\": \"Password\",\r\n    \"mobile\": 9931760809,\r\n    \"gender\": \"F\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/users/update/69c6bf18f92603e1ef2566c0",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "update",
+            "69c6bf18f92603e1ef2566c0"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List All User ",
+      "id": "62e7963f-a509-4240-95c3-a4af3575839d",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/users/all",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create a user",
+      "id": "73d22e1a-6624-4140-add5-12e089af3c7c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"John\",\r\n    \"password\": \"Password\",\r\n    \"mobile\": 9931760809,\r\n    \"gender\": \"Male\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/users/create",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete User  by Id",
+      "id": "95d874eb-2fba-492c-9b97-ca8bb2dfe68c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:3000/users/delete/69c6bf18f92603e1ef2566c0",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "users",
+            "delete",
+            "69c6bf18f92603e1ef2566c0"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

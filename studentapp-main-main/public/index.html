@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Node.js API</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .status {
+      text-align: center;
+      padding: 20px;
+      background: #f8fafc;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .status-dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: #22c55e;
+      border-radius: 50%;
+      margin-right: 8px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+      70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+    }
+
+    .content {
+      padding: 40px 30px;
+    }
+
+    h2 {
+      color: #4f46e5;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .api-list {
+      display: grid;
+      gap: 15px;
+    }
+
+    .api-item {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .api-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      border-color: #6366f1;
+    }
+
+    .api-item h3 {
+      color: #4338ca;
+      margin-bottom: 8px;
+      font-size: 1.3rem;
+    }
+
+    .api-item .method {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .get { background: #22c55e; color: white; }
+    .post { background: #3b82f6; color: white; }
+    .put { background: #eab308; color: black; }
+    .delete { background: #ef4444; color: white; }
+
+    .endpoint {
+      background: #1e2937;
+      color: #a5b4fc;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      margin: 10px 0;
+      word-break: break-all;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    .response-box {
+      background: #1e2937;
+      color: #67e8f9;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 30px 0;
+      font-family: 'Courier New', monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🚀 Node.js API</h1>
+      <p>Backend Server is Running Successfully</p>
+    </div>
+
+    <div class="status">
+      <span class="status-dot"></span>
+      <strong>Status: Online</strong> | Server is healthy and responding
+    </div>
+
+    <div class="content">
+      <h2>Available API Endpoints</h2>
+      
+      <div class="api-list">
+        <div class="api-item">
+          <span class="method get">GET</span>
+          <h3>Test API</h3>
+          <div class="endpoint">http://localhost:3000/test</div>
+          <p>Returns a welcome message and server status.</p>
+        </div>
+
+        <div class="api-item">
+          <span class="method post">POST</span>
+          <h3>Create User</h3>
+          <div class="endpoint">http://localhost:3000/users/create</div>
+          <p>Create a new user (send JSON body).</p>
+        </div>
+
+        <div class="api-item">
+          <span class="method get">GET</span>
+          <h3>Get All Users</h3>
+          <div class="endpoint">http://localhost:3000/users/all</div>
+          <p>Retrieve list of all users.</p>
+        </div>
+
+        <div class="api-item">
+          <span class="method get">GET</span>
+          <h3>Get User by ID</h3>
+          <div class="endpoint">http://localhost:3000/users/detail/:id</div>
+          <p>Fetch a specific user using their ID.</p>
+        </div>
+
+        <div class="api-item">
+          <span class="method put">PUT</span>
+          <h3>Update User</h3>
+          <div class="endpoint">http://localhost:3000/users/update/:id</div>
+          <p>Update user information.</p>
+        </div>
+
+        <div class="api-item">
+          <span class="method delete">DELETE</span>
+          <h3>Delete User</h3>
+          <div class="endpoint">http://localhost:3000/users/delete/:id</div>
+          <p>Delete a user by ID.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Node.js API Server • Running on port <strong>3000</strong></p>
+    </div>
+  </div>
+</body>
+</html>

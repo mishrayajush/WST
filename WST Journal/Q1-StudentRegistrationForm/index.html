@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Registration</h1>
+            <p>Job Application Portal - 2026</p>
+        </header>
+        
+        <form id="registrationForm">
+            <div class="form-section">
+                <h3>Personal Details</h3>
+                <div class="input-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name">
+                    <span class="error-msg" id="nameError"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="example@domain.com">
+                    <span class="error-msg" id="emailError"></span>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" placeholder="10-digit number">
+                        <span class="error-msg" id="phoneError"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob">
+                        <span class="error-msg" id="dobError"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Academic & Professional</h3>
+                <div class="input-group">
+                    <label for="qualification">Highest Qualification</label>
+                    <select id="qualification">
+                        <option value="">Select Qualification</option>
+                        <option value="BCA">BCA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="B.Tech">B.Tech</option>
+                    </select>
+                    <span class="error-msg" id="qualError"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="skills">Key Skills (Comma separated)</label>
+                    <textarea id="skills" rows="3" placeholder="e.g. JavaScript, Node.js, IoT"></textarea>
+                </div>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit Application</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

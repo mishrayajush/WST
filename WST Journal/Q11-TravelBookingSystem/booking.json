@@ -1,0 +1,107 @@
+{
+  "bookingSystemId": "COAST_VIBE_002",
+  "systemName": "Elite Coastal Getaways",
+  "users": [
+    {
+      "userId": "USR_881",
+      "firstName": "Siddharth",
+      "lastName": "Mehta",
+      "email": "sid.mehta@webmail.com",
+      "phone": "+91-9011-882233",
+      "registrationDate": "2026-03-10",
+      "totalBookings": 2,
+      "totalSpent": 185000.00,
+      "loyaltyPoints": 450
+    },
+    {
+      "userId": "USR_882",
+      "firstName": "Riya",
+      "lastName": "Kapoor",
+      "email": "riya.k@travelhub.com",
+      "phone": "+91-9011-445566",
+      "registrationDate": "2026-04-05",
+      "totalBookings": 1,
+      "totalSpent": 95000.00,
+      "loyaltyPoints": 200
+    }
+  ],
+  "trips": [
+    {
+      "tripId": "TRIP_AX22",
+      "userId": "USR_881",
+      "tripName": "Beach & Yoga Retreat",
+      "startDate": "2026-05-15",
+      "endDate": "2026-05-22",
+      "destinations": ["Goa", "Gokarna"],
+      "duration": "7 days",
+      "totalCost": 125000.00,
+      "status": "Confirmed",
+      "bookingDate": "2026-04-20"
+    }
+  ],
+  "hotels": [
+    {
+      "hotelId": "H_GOA_09",
+      "hotelName": "Azure Sands Resort",
+      "city": "Goa",
+      "country": "India",
+      "rating": 5,
+      "pricePerNight": 22500.00,
+      "currency": "INR",
+      "availableRooms": 4,
+      "amenities": ["Infinity Pool", "Yoga Deck", "Private Beach", "Organic Café"],
+      "address": "45 Ashwem Beach Road"
+    },
+    {
+      "hotelId": "H_ALB_04",
+      "hotelName": "The Palms Villa",
+      "city": "Alibaug",
+      "country": "India",
+      "rating": 4,
+      "pricePerNight": 18000.00,
+      "currency": "INR",
+      "availableRooms": 2,
+      "amenities": ["Private Garden", "WiFi", "Home Chef"],
+      "address": "12 Kihim Beach Lane"
+    }
+  ],
+  "flights": [
+    {
+      "flightId": "FL_BOM_GOI",
+      "flightNumber": "AI502",
+      "airline": "Air India",
+      "departure": {
+        "city": "Mumbai",
+        "airport": "BOM",
+        "date": "2026-05-15",
+        "time": "07:30"
+      },
+      "arrival": {
+        "city": "Goa",
+        "airport": "GOI",
+        "date": "2026-05-15",
+        "time": "08:45"
+      },
+      "duration": "1h 15m",
+      "pricePerPerson": 5200.00,
+      "availableSeats": 12,
+      "seatClass": "Premium Economy"
+    }
+  ],
+  "bookings": [
+    {
+      "bookingId": "BK_9901",
+      "tripId": "TRIP_AX22",
+      "userId": "USR_881",
+      "bookingDate": "2026-04-20",
+      "hotelId": "H_GOA_09",
+      "checkInDate": "2026-05-15",
+      "checkOutDate": "2026-05-19",
+      "nights": 4,
+      "pricePerNight": 22500.00,
+      "totalCost": 90000.00,
+      "status": "Paid",
+      "roomType": "Ocean View Suite"
+    }
+  ]
+}

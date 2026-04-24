@@ -1,0 +1,24 @@
+.hero-section {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('college-bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    background: #fdfdfd;
+}
+
+.feature-card {
+    flex: 1;
+    padding: 30px;
+    border-top: 4px solid #2563eb;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
